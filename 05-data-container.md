@@ -1,17 +1,21 @@
 # Data Container in Python
+
 在 Python 中，**資料容器**（Data Container）是指能夠存儲多個資料值的結構或物件。這些容器允許你組織和管理多個資料項目，並能以各種方式操作這些數據。Python 提供了多種內建的資料容器，每種容器都有不同的特性和用途。
 
 以下是常見的 Python 資料容器：
 
-### 1. **列表（List）**
+## 1. **列表（List）**
+
 列表是一種可變（mutable）的資料容器，可以儲存不同類型的資料項目，並允許根據索引來存取、更新和刪除項目。列表是有序的，可以包含重複的值。
 
 **特性**：
+
 - 可變（可以修改）
 - 有序
 - 支援重複元素
 
-**範例**：
+**範例**
+
 ```python
 fruits = ["apple", "banana", "cherry"]
 print(fruits[1])  # 輸出：banana
@@ -19,32 +23,38 @@ fruits.append("orange")  # 新增元素
 print(fruits)
 ```
 
-##### [範例參考](05-1-List.ipynb)
+[範例參考](05-1-List.ipynb)
 
-### 2. **元組（Tuple）**
+## 2. **元組（Tuple）**
+
 元組與列表相似，但它是**不可變**的，這意味著一旦創建，元組的內容就無法被更改。元組通常用於需要保護資料不被更改的情況。
 
 **特性**：
+
 - 不可變
 - 有序
 - 支援重複元素
 
 **範例**：
+
 ```python
 coordinates = (10.0, 20.0)
 print(coordinates[0])  # 輸出：10.0
 # coordinates[0] = 15.0  # 會出錯，因為元組不可變
 ```
 
-### 3. **集合（Set）**
+## 3. **集合（Set）**
+
 集合是一種無序且不允許重複元素的容器。它主要用於需要唯一值的情境，比如去除重複項目。集合支援數學運算，如聯集、交集和差集。
 
 **特性**：
+
 - 無序
 - 不允許重複元素
 - 不支援索引
 
 **範例**：
+
 ```python
 unique_numbers = {1, 2, 3, 3, 4}
 print(unique_numbers)  # 輸出：{1, 2, 3, 4}
@@ -52,15 +62,18 @@ unique_numbers.add(5)  # 新增元素
 print(unique_numbers)
 ```
 
-### 4. **字典（Dictionary）**
+## 4. **字典（Dictionary）**
+
 字典是用來存儲**鍵值對**（key-value pairs）的容器，每個鍵都對應一個值。字典是無序的，但從 Python 3.7 開始，字典保持插入順序。字典的鍵是唯一的，不允許重複。
 
 **特性**：
+
 - 無序（但在 Python 3.7 及以後版本中是有插入順序的）
 - 鍵必須唯一
 - 可變
 
 **範例**：
+
 ```python
 person = {"name": "John", "age": 30, "city": "New York"}
 print(person["name"])  # 輸出：John
