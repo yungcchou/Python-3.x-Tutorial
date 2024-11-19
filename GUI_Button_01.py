@@ -8,7 +8,7 @@ def countFun( lbl, type ):
 if __name__ == "__main__":
     root = Tk()
     root.title("GUI_Button") 
-    root.geometry("375x140+100+50")
+    root.geometry("375x150+100+50")
     lbl = Label( root, width=8, height=2, bg="#ccddef",
                 font=("Times New Roman", 20, "bold"),
                 text="0", justify=CENTER)
